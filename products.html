@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products – Poultry E-Commerce</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">PoultryMart – Chickens</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+        </button>
+        <nav class="nav" aria-label="Primary navigation">
+          <ul class="nav-list" id="navList">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li>
+              <a class="nav-link" href="products.html?cat=4-month-old chickens"
+                >4-Month Old</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="products.html?cat=5-month-old chickens"
+                >5-Month Old</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="products.html?cat=6-month-old chickens and older"
+                >6-Month Old &amp; Older</a
+              >
+            </li>
+            <li><a class="nav-link" href="admin.html">Admin Dashboard</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container">
+        <header class="section-header">
+          <h1 class="section-title" id="productsTitle">Product Listings</h1>
+          <div class="meta" id="filterMeta"></div>
+        </header>
+        <div class="grid" id="productsGrid"></div>
+      </section>
+
+      <section class="section container" id="productDetail" hidden>
+        <header class="section-header">
+          <h2 class="section-title">Product Details</h2>
+          <button class="btn secondary" id="backToListBtn">
+            Back to Listings
+          </button>
+        </header>
+        <article class="detail" id="detailContent"></article>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div>Contact</div>
+        <div class="footer-meta">
+          EMAIL: viltran_murillo@sjp2cd.edu.ph<br />
+          PHONE NUMBER: 0968-731-9598
+        </div>
+        <div class="footer-meta">STRICTLY USE THE IMAGE PROVIDED AND BACKGROUND FOLDER SHOULD BE USED</div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Dashboard – Poultry E-Commerce</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">PoultryMart – Chickens</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+        </button>
+        <nav class="nav" aria-label="Primary navigation">
+          <ul class="nav-list" id="navList">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li>
+              <a class="nav-link" href="products.html?cat=4-month-old chickens"
+                >4-Month Old</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="products.html?cat=5-month-old chickens"
+                >5-Month Old</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="products.html?cat=6-month-old chickens and older"
+                >6-Month Old &amp; Older</a
+              >
+            </li>
+            <li><a class="nav-link" href="admin.html">Admin Dashboard</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container">
+        <header class="section-header">
+          <h1 class="section-title">Admin Dashboard</h1>
+          <div class="meta">
+            Add, edit, categorize, and manage chicken listings, prices, and
+            inventory.
+          </div>
+        </header>
+
+        <div class="admin-grid">
+          <form class="admin-form" id="adminForm" novalidate>
+            <input type="hidden" id="productId" value="" />
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-row">
+              <label for="breed">Breed</label>
+              <input
+                id="breed"
+                name="breed"
+                type="text"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-row">
+              <label for="ageCategory">Age Category</label>
+              <select id="ageCategory" name="ageCategory" required>
+                <option value="4-month-old chickens">4-month-old chickens</option>
+                <option value="5-month-old chickens">5-month-old chickens</option>
+                <option value="6-month-old chickens and older">
+                  6-month-old chickens and older
+                </option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="ageMonths">Age (months)</label>
+              <input
+                id="ageMonths"
+                name="ageMonths"
+                type="number"
+                min="1"
+                step="1"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="price">Price (PHP)</label>
+              <input
+                id="price"
+                name="price"
+                type="number"
+                min="0"
+                step="0.01"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="availability">Availability</label>
+              <select id="availability" name="availability" required>
+                <option value="in stock">in stock</option>
+                <option value="out of stock">out of stock</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="image">Image (use provided images)</label>
+              <select id="image" name="image" required>
+                <option value="images/chicken-4m-01.svg">
+                  images/chicken-4m-01.svg
+                </option>
+                <option value="images/chicken-4m-02.svg">
+                  images/chicken-4m-02.svg
+                </option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="description">Short Description</label>
+              <textarea
+                id="description"
+                name="description"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <div class="form-row">
+              <label for="details">Detailed Information</label>
+              <textarea id="details" name="details" rows="5" required></textarea>
+            </div>
+            <div class="card-actions">
+              <button class="btn" type="submit">Save Product</button>
+              <button class="btn secondary" type="button" id="resetBtn">
+                Reset Form
+              </button>
+            </div>
+            <div class="meta" id="formMsg" aria-live="polite"></div>
+          </form>
+
+          <div class="admin-table-wrap">
+            <table class="table" id="productsTable" aria-label="Products table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Breed</th>
+                  <th>Category</th>
+                  <th>Age (mo)</th>
+                  <th>Price (PHP)</th>
+                  <th>Avail</th>
+                  <th>Image</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="productsTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div>Contact</div>
+        <div class="footer-meta">
+          EMAIL: viltran_murillo@sjp2cd.edu.ph<br />
+          PHONE NUMBER: 0968-731-9598
+        </div>
+        <div class="footer-meta">STRICTLY USE THE IMAGE PROVIDED AND BACKGROUND FOLDER SHOULD BE USED</div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

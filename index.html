@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Poultry E-Commerce – Chickens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">PoultryMart – Chickens</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+        </button>
+        <nav class="nav" aria-label="Primary navigation">
+          <ul class="nav-list" id="navList">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li>
+              <a class="nav-link" href="products.html?cat=4-month-old chickens"
+                >4-Month Old</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="products.html?cat=5-month-old chickens"
+                >5-Month Old</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="products.html?cat=6-month-old chickens and older"
+                >6-Month Old &amp; Older</a
+              >
+            </li>
+            <li><a class="nav-link" href="admin.html">Admin Dashboard</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>Poultry E-Commerce Specializing in Chickens</h1>
+          <p>Quality chickens by age: 4 months, 5 months, 6 months and older.</p>
+          <div>
+            <a class="btn ghost" href="products.html">View All Products</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <header class="section-header">
+          <h2 class="section-title">Featured Chickens</h2>
+          <a class="btn secondary" href="products.html">See all</a>
+        </header>
+        <div class="grid" id="featuredGrid"></div>
+      </section>
+
+      <section class="section container">
+        <header class="section-header">
+          <h2 class="section-title">Chicken Categories</h2>
+        </header>
+        <div class="grid">
+          <article class="card">
+            <div class="card-media">
+              <img
+                src="images/chicken-4m-01.svg"
+                alt="4-month-old chickens"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">4-month-old chickens</h3>
+              <p class="meta">
+                Teenagers/pullets – still growing; feathers mostly fully grown
+                in. On grower feed (16–18% protein).
+              </p>
+              <div class="card-actions">
+                <a
+                  class="btn"
+                  href="products.html?cat=4-month-old chickens"
+                  >Browse Category</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-media">
+              <img
+                src="images/chicken-4m-02.svg"
+                alt="5-month-old chickens"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">5-month-old chickens</h3>
+              <p class="meta">
+                Nearly mature – many hens begin first small eggs; switch to layer
+                feed considerations around first egg.
+              </p>
+              <div class="card-actions">
+                <a
+                  class="btn"
+                  href="products.html?cat=5-month-old chickens"
+                  >Browse Category</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-media">
+              <img
+                src="images/chicken-4m-01.svg"
+                alt="6-month-old chickens and older"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">6-month-old chickens and older</h3>
+              <p class="meta">
+                Fully mature – regular laying; need layer feed, grit, fresh
+                water, calcium supplements.
+              </p>
+              <div class="card-actions">
+                <a
+                  class="btn"
+                  href="products.html?cat=6-month-old chickens and older"
+                  >Browse Category</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div>Contact</div>
+        <div class="footer-meta">
+          EMAIL: viltran_murillo@sjp2cd.edu.ph<br />
+          PHONE NUMBER: 0968-731-9598
+        </div>
+        <div class="footer-meta">STRICTLY USE THE IMAGE PROVIDED AND BACKGROUND FOLDER SHOULD BE USED</div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

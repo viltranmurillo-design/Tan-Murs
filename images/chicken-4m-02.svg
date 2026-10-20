@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="feather" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="250" rx="150" ry="25" fill="#000000" opacity="0.15"/>
+  <path d="M150 210 Q140 150 180 130 Q200 120 210 140 Q230 110 270 120 Q300 125 310 160 Q320 200 300 220 Q270 240 210 240 Q170 240 150 210 Z" fill="url(#feather)"/>
+  <circle cx="200" cy="140" r="34" fill="url(#feather)"/>
+  <circle cx="190" cy="135" r="3" fill="#1f2937"/>
+  <circle cx="212" cy="135" r="3" fill="#1f2937"/>
+  <path d="M195 150 Q200 158 205 150" stroke="#1f2937" stroke-width="2" fill="none"/>
+  <path d="M150 160 Q130 155 125 170 Q135 175 150 172 Z" fill="#f59e0b"/>
+  <path d="M250 160 Q270 155 275 170 Q265 175 250 172 Z" fill="#f59e0b"/>
+  <path d="M170 180 Q160 200 175 215" stroke="#d97706" stroke-width="4" fill="none"/>
+  <path d="M230 180 Q240 200 225 215" stroke="#d97706" stroke-width="4" fill="none"/>
+  <path d="M190 215 Q200 230 210 215" stroke="#d97706" stroke-width="4" fill="none"/>
+  <rect x="195" y="110" width="10" height="14" rx="3" fill="#f87171" opacity="0.85"/>
+  <rect x="195" y="124" width="10" height="8" rx="2" fill="#f87171" opacity="0.7"/>
+  <text x="200" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#78350f" text-anchor="middle">4-Month-Old Pullet</text>
+  <text x="200" y="285" font-family="Arial, sans-serif" font-size="12" fill="#78350f" text-anchor="middle">Still growing · Grower feed · Combs redden</text>
+</svg>
